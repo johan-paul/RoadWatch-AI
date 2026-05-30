@@ -1,0 +1,91 @@
+# ─── Secrets (NEVER commit) ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+**/.env
+firebase-credentials.json
+**/firebase-credentials.json
+google-services.json
+GoogleService-Info.plist
+*.pem
+*.key
+
+# ─── Python / Backend ──────────────────────────────────────────────────────────
+roadwatch-backend/venv/
+roadwatch-backend/data/                 # 12 GB RDD2022 dataset — re-download from README
+roadwatch-backend/models/*.pth          # PyTorch artifact (we use .keras)
+roadwatch-backend/models/*.csv          # training logs
+roadwatch-backend/models/*_saved/       # tf2onnx temp folder
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ─── Node / Admin Dashboard ────────────────────────────────────────────────────
+roadwatch-admin/node_modules/
+roadwatch-admin/dist/
+roadwatch-admin/.vite/
+roadwatch-admin/coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Flutter / Mobile App ──────────────────────────────────────────────────────
+roadwatch_app/build/
+roadwatch_app/.dart_tool/
+roadwatch_app/.flutter-plugins
+roadwatch_app/.flutter-plugins-dependencies
+roadwatch_app/.packages
+roadwatch_app/.pub-cache/
+roadwatch_app/.pub/
+
+# Android
+roadwatch_app/android/.gradle/
+roadwatch_app/android/captures/
+roadwatch_app/android/local.properties
+roadwatch_app/android/key.properties
+roadwatch_app/android/app/release/
+roadwatch_app/android/app/debug/
+roadwatch_app/android/app/profile/
+roadwatch_app/android/app/google-services.json
+
+# iOS
+roadwatch_app/ios/Pods/
+roadwatch_app/ios/Flutter/Flutter.framework
+roadwatch_app/ios/Flutter/Flutter.podspec
+roadwatch_app/ios/Flutter/flutter_export_environment.sh
+roadwatch_app/ios/Flutter/Generated.xcconfig
+roadwatch_app/ios/Runner.xcworkspace/xcuserdata/
+roadwatch_app/ios/Runner.xcodeproj/xcuserdata/
+roadwatch_app/ios/Runner/GoogleService-Info.plist
+roadwatch_app/ios/.symlinks/
+
+# ─── IDE / Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history/
+.fleet/
+
+# ─── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ─── Misc ──────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+memory/                                 # local dev notes
+.claude/                                # local Claude Code tool data
