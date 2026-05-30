@@ -1,1 +1,0 @@
-- [RoadWatch AI project](project_roadwatch.md) — FastAPI+Supabase backend + Flutter app, OTP auth, role-based single app
